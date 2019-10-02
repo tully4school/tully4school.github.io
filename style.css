@@ -1,0 +1,70 @@
+
+body {
+	background-color: #edefec;
+	font-family: 'Be Vietnam', sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	color: rgb(68,72,74);
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.row {
+	display: inline-flex;
+}
+a {
+	text-decoration: none;
+	background-color:white;
+	border: .8px solid grey;
+	padding: 5px 25px;
+	font-size: 12px;
+	color: rgb(68,72,74);
+}
+h4 {
+	color: rgb(68,72,74);
+	margin-top: 5px;
+	font-weight: bold;
+	font-size:14px;
+}
+
+p {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 20px;
+	margin: 0 auto;
+	font-weight: 600;
+	letter-spacing: .9px;
+}
+.container1 {
+	background: url('../san-francisco.jpg');
+}
+.container2 {
+	background: url('../new-york.jpg');
+
+}
+.container3 {
+	background: url('../london.jpg');
+
+}
+.container4 {
+	background: url('../napa.jpg');
+
+}
+.container5 {
+	background: url('../sonoma.jpg');
+
+}
+.container6 {
+	background: url('../san-francisco-2.jpg');
+}
+.container1,.container2,.container3,.container4,.container5,.container6 {
+	height: 250px;
+	width: 250px;
+	margin: 20px;
+	background-size: 250px;
+}
