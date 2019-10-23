@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Javascript Flashcards</title>
+	</head>
+	<body>
+		<main>
+			<div class="points">
+				<p class="score"><span>Your Score is: </span><span class=digits></span></p>
+			</div>
+			<div class="card-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="click flipper">
+					<div class="front-of-card">
+						<p class="question"></p>
+					</div>
+					<div class="back-of-card">
+						<p class="answer"></p>
+					</div>
+				</div>
+			</div>
+			<div class="score-buttons">
+				<div class="pass">
+					<button class="correct">I Got It Right!</button>
+				</div>
+				<div class="fail">
+					<button class="wrong">I Got It Wrong</button>
+				</div>
+			</div>
+			<div class="moveOn">
+				<div class="back">
+					<button class="previous">Previous Card</button>
+				</div>
+				<div class="forward">
+					<button class="next">Next Card</button>
+				</div>
+			</div>
+		</main>
+		<script src="main2.js"></script>
+	</body>
+</html>
