@@ -1,0 +1,149 @@
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+}
+header {
+	display: inline-flex;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.navbar {
+	display: inline-flex;
+	font-size: 24px;
+	list-style: none;
+}
+.navbarli {
+	font-family: 'Alfa Slab One', cursive;
+	padding: 0 40px;
+}
+.tab {
+	background-color: grey;
+}
+.tabLinks {
+	width: 10%;
+	background-color: grey;
+ 	border: none;
+ 	transition: .3s;
+ 	font-size: 1em;
+}
+.tabLinks:hover {
+	background-color: #c7c7c7;
+}
+.tabLinks.active {
+	background-color: #c7c7c7;
+}
+.tabContent {
+	position: relative;
+	display:none;
+}
+.tabContent.active {
+	transition: all 3s ease;
+	display: block;
+	background-color: white;
+}
+.innerContainer {
+	margin: 0 auto;
+	position: relative;
+	width: 15%;
+	padding: 2%;
+	border: 1px solid gray;
+	box-shadow: 4px 10px 6px 0px gray;
+	font-size: 30px;
+}
+h4 {
+	margin-bottom:0;
+}
+.currentPrice, .priceChange {
+	margin-top: 5px;
+}
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+/*.coinLogo {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	margin: 0 auto;
+}
+*/.coinLogo1 {
+	width: 100%;
+}
+.coinLogo2 {
+	width: 100%;
+}
+/*.currentPrice {
+	position: absolute;
+	left: 46.1%;
+	right: 50%;
+	top: 70%;
+}*/
+.main {
+	margin-top: 0;
+}
+@media screen and (max-width: 2000px) and (min-width: 1063px) {
+	.lg {
+		display: none;
+	}
+	.innerContainer {
+		width: 15%;
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 1063px) and (min-width: 586px) {
+	.xl {
+		display: none;
+	}
+	.innerContainer{
+		width: 30%;
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 586px) and (min-width: 318px) {
+	header {
+		display: none;
+	}
+	.lg{
+		display: none;
+	}
+	.innerContainer {
+		width:50%;
+		font-size: 20px;
+	}
+	.tabLinks {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 318px) and  (min-width: 100px) {
+	header {
+		display: none;
+	}
+	.lg{
+		display: none;
+	}
+	.innerContainer {
+		width:100%;
+		font-size: 20px;
+	}
+	.tabLinks {
+		width: 100%;
+	}
+}
+
+
